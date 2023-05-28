@@ -87,11 +87,6 @@ public class MainActivity extends AppCompatActivity {
                 num2 = c.getString(3);
 
 
-                Log.d ("value",value);
-                Log.d("operateur", String.valueOf(ope.equals("multiply")));
-                Log.d("num1",num1);
-                Log.d("num2",num2);
-
                 if (ope.equals("divide")) {
 
                     card_views.add(new Card_View(num1+" "+"/"+" "+num2,""+value+""));
@@ -526,12 +521,12 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+        // app
 
         btn_eqaul.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                Database_Setup("cal");
 
                 calculer(list);
 
